@@ -1,5 +1,5 @@
 fun main() {
-    print("Bem vindo ao ByteBank")
+    println("Bem vindo ao ByteBank")
     val titular = "Alex"
-    println(titular)
+    println("titular $titular")
 }
