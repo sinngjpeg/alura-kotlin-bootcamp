@@ -1,6 +1,31 @@
 fun main() {
     println("Bem vindo ao ByteBank")
 
+    val contaIngrid = Conta()
+    contaIngrid.titular = "Ingrid"
+    contaIngrid.numero = 1000
+    contaIngrid.saldo = 300.0
+
+    println(contaIngrid.titular)
+    println(contaIngrid.numero)
+    println(contaIngrid.saldo)
+    println()
+
+    val contaFran = Conta()
+    contaFran.titular = "Fran"
+    contaFran.numero = 1001
+    contaFran.saldo = 520.0
+
+    println(contaFran.titular)
+    println(contaFran.numero)
+    println(contaFran.saldo)
+
+}
+
+class Conta {
+    var titular = ""
+    var numero = 0
+    var saldo = 0.0
 }
 
 fun testaLaco() {
