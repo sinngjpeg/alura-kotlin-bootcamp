@@ -29,6 +29,12 @@ fun main() {
     println("Depositando na conta da Fran")
     contaFran.deposita(150.0)
     println(contaFran.saldo)
+    println()
+
+    println("Sacando na conta da Ingrid")
+    contaIngrid.saca(20.0)
+    println(contaIngrid.saldo)
+    println()
 
 }
 
@@ -39,6 +45,12 @@ class Conta {
 
     fun deposita(valor: Double) {
         this.saldo += valor
+    }
+
+    fun saca(valor: Double) {
+        if (saldo >= valor) {
+            saldo -= valor
+        }
     }
 }
 
