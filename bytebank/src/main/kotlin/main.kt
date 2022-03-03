@@ -22,12 +22,12 @@ fun main() {
     println()
 
     println("Depositando na conta da Ingrid")
-    deposita(contaIngrid, 50.0)
+    contaIngrid.deposita(50.0)
     println(contaIngrid.saldo)
     println()
 
     println("Depositando na conta da Fran")
-    deposita(contaFran, 150.0)
+    contaFran.deposita(150.0)
     println(contaFran.saldo)
 
 }
@@ -36,11 +36,12 @@ class Conta {
     var titular = ""
     var numero = 0
     var saldo = 0.0
+
+    fun deposita(valor: Double) {
+        this.saldo += valor
+    }
 }
 
-fun deposita(conta: Conta, valor: Double) {
-    conta.saldo += valor
-}
 
 fun testaCopiaEReferencia() {
     val numeroX = 10
