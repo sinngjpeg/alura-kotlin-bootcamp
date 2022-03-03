@@ -19,6 +19,27 @@ fun main() {
     println(contaFran.titular)
     println(contaFran.numero)
     println(contaFran.saldo)
+    println()
+
+    val numeroX = 10
+    var numeroY = numeroX
+    numeroY++
+
+    println("numeroX $numeroX")
+    println("numeroY $numeroY")
+    println()
+
+    val contaJoao = Conta()
+    contaJoao.titular = "Joao"
+    var contaMaria = contaJoao
+    contaMaria.titular = "Maria"
+
+    println("titular conta joao: ${contaJoao.titular}")
+    println("titular conta joao: ${contaMaria.titular}")
+    println()
+
+    println(contaJoao)
+    println(contaMaria)
 
 }
 
